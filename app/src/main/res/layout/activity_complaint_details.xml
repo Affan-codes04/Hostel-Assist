@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/cut_card_background"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0288D1"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_marginTop="150dp"
+        android:elevation="14dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="14dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/confounded_circle_svgrepo_com"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80FFFFFF" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="90dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Your Name"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewRoomNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="90dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Your Room Number"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="150dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="90dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Your Issue"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_marginTop="360dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <RadioGroup
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reject"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/addressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Addressed"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold"/>
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#0E0E0E"
+                android:text="Save"
+                android:onClick="statusUpdate"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

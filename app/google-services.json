@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19009068628",
+    "project_id": "hostel-grievances",
+    "storage_bucket": "hostel-grievances.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19009068628:android:e85d677f49ac64d52317c1",
+        "android_client_info": {
+          "package_name": "com.example.hostelgrievances"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN0VzfM2DPITqjIjH08d5wLpecOA1JOoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
